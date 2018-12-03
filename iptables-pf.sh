@@ -84,7 +84,7 @@ Set_local_ip(){
 		local_ip=$(wget -qO- -t1 -T2 ipinfo.io/ip)
 		if [[ -z "${local_ip}" ]]; then
 			echo "${Error} 无法检测到本服务器的公网IP，请手动输入"
-			read -e -p "请输入 本服务器的 网卡IP(注意是网卡绑定的IP，而不仅仅是公网IP):" local_ip
+			read -e -p "请输入本服务器的网卡IP(注意如果是NAT网络，如谷歌云、阿里云、腾讯云、需要输入内网或者私网IP，而不是公网IP，查询：ifconfig，看第二行的 inet addr:xxx.xxx.xxx.xxx):" local_ip
 			[[ -z "${local_ip}" ]] && echo "取消..." && exit 1
 		fi
 	fi
@@ -243,9 +243,9 @@ Set_iptables(){
 	fi
 }
 Update_Shell(){
-	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/lxitdn/doubi-2/master/iptables-pf.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
+	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/lxitdn/Doubi/master/iptables-pf.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
 	[[ -z ${sh_new_ver} ]] && echo -e "${Error} 无法链接到 Github !" && exit 0
-	wget -N --no-check-certificate "https://raw.githubusercontent.com/lxitdn/doubi-2/master/iptables-pf.sh" && chmod +x iptables-pf.sh
+	wget -N --no-check-certificate "https://raw.githubusercontent.com/lxitdn/Doubi/master/iptables-pf.sh" && chmod +x iptables-pf.sh
 	echo -e "脚本已更新为最新版本[ ${sh_new_ver} ] !(注意：因为更新方式为直接覆盖当前运行的脚本，所以可能下面会提示一些报错，无视即可)" && exit 0
 }
 check_sys
