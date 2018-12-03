@@ -79,7 +79,7 @@ Set_local_port(){
 	echo && echo -e "	本地监听端口 : ${Red_font_prefix}${local_port}${Font_color_suffix}" && echo
 }
 Set_local_ip(){
-	read -e -p "请输入 本服务器的 网卡IP(注意是网卡绑定的IP，而不仅仅是公网IP，回车自动检测外网IP):" local_ip
+	read -e -p "请输入本服务器的网卡IP(注意如果是NAT网络，如谷歌云、阿里云、腾讯云、需要输入内网或者私网IP，而不是公网IP，查询：ifconfig，看第二行的 inet addr:xxx.xxx.xxx.xxx):" local_ip
 	if [[ -z "${local_ip}" ]]; then
 		local_ip=$(wget -qO- -t1 -T2 ipinfo.io/ip)
 		if [[ -z "${local_ip}" ]]; then
