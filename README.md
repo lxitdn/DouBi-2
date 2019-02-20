@@ -311,7 +311,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 - 脚本说明: ServerStatus 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
-- 使用方法: https://doub.io/shell-jc3/
+- 使用方法: https://www.bnxb.com/linuxserver/27272.html
 
 #### 下载安装:
 ``` bash
