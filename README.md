@@ -27,7 +27,7 @@
   * [pserver.sh](#pserversh)
 * [***服务器相关***](#服务器相关)
   * [bbr.sh](#bbrsh)
-  * [status.sh](#statussh)
+  * [status.sh-已修改](#statussh)
   * [ban_iptables.sh](#ban_iptablessh)
   * [ssh_port.sh](#ssh_portsh)
 * [***VPN 相关***](#vpn相关)
@@ -112,7 +112,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/lxitdn/Doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 ```
 
 ---
@@ -199,7 +199,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/lxitdn/Doubi/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
 ```
 
 ---
@@ -247,7 +247,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/tinymapper.sh && chmod +x tinymapper.sh && bash tinymapper.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/lxitdn/Doubi/master/tinymapper.sh && chmod +x tinymapper.sh && bash tinymapper.sh
 ```
 
 ---
@@ -315,7 +315,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 #### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/status.sh && chmod +x status.sh && bash status.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/lxitdn/Doubi/master/status.sh && chmod +x status.sh && bash status.sh
 ```
 
 ---
